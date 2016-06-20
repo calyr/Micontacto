@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.coursera.app.pm.micontacto.DetalleContactoActivity">
+
+    <TextView android:text="@string/show_confirm"
+        android:textSize="@dimen/form_title_dimen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showconfirm"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre"
+        android:layout_below="@+id/showconfirm"
+        android:id="@+id/showFormName"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/show_birthdate_text"
+        android:layout_below="@+id/showFormName"
+        android:id="@+id/showBithdateText"
+        android:textStyle="bold"
+        android:padding="5dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="fecha"
+        android:id="@+id/showFormBirthdate"
+        android:layout_toRightOf="@+id/showBithdateText"
+        android:layout_below="@+id/showFormName"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/show_phone_label"
+        android:layout_below="@+id/showBithdateText"
+        android:id="@+id/showPhoneLabel"
+        android:textStyle="bold"
+        android:padding="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/show_email_label"
+        android:layout_below="@+id/showPhoneLabel"
+        android:id="@+id/showEmailText"
+        android:textStyle="bold"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/show_description_label"
+        android:layout_below="@+id/showEmailText"
+        android:id="@+id/showDescriptionLabel"
+        android:textStyle="bold"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mi telefono"
+        android:id="@+id/showFormPhone"
+        android:layout_toLeftOf="@+id/showFormBirthdate"
+        android:layout_toStartOf="@+id/showFormBirthdate"
+        android:layout_below="@+id/showBithdateText"
+        android:layout_toRightOf="@+id/showPhoneLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="correo"
+        android:id="@+id/showFormEmail"
+        android:layout_below="@+id/showPhoneLabel"
+        android:layout_toRightOf="@+id/showEmailText"
+        android:layout_toEndOf="@+id/showEmailText"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="showFormDescription"
+        android:id="@+id/showFormDescription"
+        android:layout_below="@+id/showEmailText"
+        android:layout_toRightOf="@+id/showDescriptionLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_btn_edit"
+        android:id="@+id/showBtnEdit"
+        android:layout_below="@+id/showFormDescription" android:onClick="editForm" />
+
+</RelativeLayout>
